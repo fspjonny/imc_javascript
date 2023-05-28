@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+:root {
+  --primary-color: rgb(17, 86, 102);
+  --primary-color-darker: rgb(9, 48, 56);
+}
+
+* {
+  outline: 0;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin: 10px;
+}
+
+body {
+  background: var(--primary-color);
+  font-family: 'Open sans', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 310px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 2px #0004;
+}
+
+.resultado {
+  display: none;
+  margin: 20px 0;
+  background-color: green;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+form input, form label, form button {
+  display: block;
+  margin-bottom: 8px;
+}
+
+form input {
+  font-size: 20px;
+  padding: 4px;
+  border-radius: 8px;
+}
+
+.input-button {
+  border-radius: 8px;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  height: 30px;
+  width: 90px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+form button:hover {
+  background: var(--primary-color-darker);
+}
+
+table {
+  margin: 10px 20px 30px 0;
+  padding: 5px;
+  width: 100%;
+  border-radius: 8px;
+  background-color: rgb(211, 211, 211);
+  font-size: 14px;
+}
+
+.arrange-buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.arrange-inputs{
+  display: flex;
+  flex-direction: column;
+}
+
+.tsr{
+  text-align: right;
+}
+
+.wdt{
+  font-size: 1.4rem;
+}
