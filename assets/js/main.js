@@ -40,24 +40,24 @@ function avaliacao(massa) {
             return `<img src="./assets/img/homem-abaixo.png" alt="Peso Abaixo"><br/>Você está <strong>Abaixo do peso</strong>`
             break;
 
-        case (massa >= 18.5 && massa <= 24.9 ):
+        case (massa >= 18.5 && massa <= 24.99 ):
             document.querySelector('.resultado').style.background = '#00FF7F'
             document.querySelector('.resultado').style.color = '#000'
             return `<img src="./assets/img/homem-normal.png" alt="Peso Normal"><br/>Você está com <strong>peso normal</strong>`
             break;
 
-        case (massa >= 25.0 && massa <= 29.9 ):
+        case (massa >= 25.0 && massa <= 29.99 ):
             document.querySelector('.resultado').style.background = '#DAA520'
             return `<img src="./assets/img/homem-sobrepeso.png" alt="Sobrepeso"><br/>Você está com <strong>sobrepeso</strong>`
             break;
 
-        case (massa >= 30.0 && massa <= 34.9 ):
+        case (massa >= 30.0 && massa <= 34.99 ):
             document.querySelector('.resultado').style.background = '#CD5C5C'
             document.querySelector('.resultado').style.color = '#FFF'
             return `<img src="./assets/img/homem-obeso_i.png" alt="Obeso I"><br/>Você está com <strong>Obesidade grau I</strong>`
             break;
 
-        case (massa >= 35.0 && massa <= 39.9 ):
+        case (massa >= 35.0 && massa <= 39.99 ):
             document.querySelector('.resultado').style.background = '#FF0000'
             document.querySelector('.resultado').style.color = '#FFF'
             return `<img src="./assets/img/homem-obeso_ii.png" alt="Obeso II"><br/>Você está com <strong>Obesidade grau II</strong>`
