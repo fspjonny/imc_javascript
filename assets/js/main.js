@@ -37,8 +37,7 @@ function avaliacao(massa) {
     switch (true) {
         case (massa < 18.50):
             document.querySelector('.resultado').style.background = '#00BFFF'
-            return `<img src="/assets/img/homem-abaixo.png" alt="Peso Abaixo"><br/>Você está <strong>Abaixo do peso</strong>`
-            
+            return `<img src="/assets/img/homem-abaixo.png" alt="Peso Abaixo"><br/>Você está <strong>Abaixo do peso</strong>`            
             break;
 
         case (massa >= 18.50 && massa <= 24.90 ):
