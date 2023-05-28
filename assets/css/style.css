@@ -8,7 +8,7 @@ body {
   position: relative;
   height: 99vh;
   width: 99vw;
-  background-image: url('/tree/main/assets/img/background.jpg');
+  background-image: url('../img/background.jpg');
   background-size: cover;
 }
 
