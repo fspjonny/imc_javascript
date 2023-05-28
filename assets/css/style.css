@@ -1,23 +1,22 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
-:root {
-  --primary-color: rgb(17, 86, 102);
-  --primary-color-darker: rgb(9, 48, 56);
-}
-
 * {
-  outline: 0;
   margin: 0;
   padding: 0;
+  font-family: "Roboto";
+}
+
+body {
+  position: relative;
+  height: 99vh;
+  width: 99vw;
+  background-image: url('/assets/img/background.jpg');
+  background-size: cover;
 }
 
 h1 {
   text-align: center;
-  margin: 10px;
-}
+  color: #0008;
 
-body {
-  background: var(--primary-color);
-  font-family: 'Open sans', sans-serif;
+  margin: 10px;
 }
 
 .container {
@@ -25,7 +24,7 @@ body {
   flex-direction: column;
   max-width: 310px;
   margin: 40px auto;
-  background: #fff;
+  background-color: #fff8;
   padding: 10px;
   border-radius: 10px;
   box-shadow: 4px 4px 2px #0004;
@@ -67,11 +66,11 @@ form button:hover {
 }
 
 table {
-  margin: 10px 20px 30px 0;
+  margin-top: 15px;
   padding: 5px;
   width: 100%;
   border-radius: 8px;
-  background-color: rgb(211, 211, 211);
+  background-color: rgba(211, 211, 211, 0.6);
   font-size: 14px;
 }
 
@@ -81,9 +80,20 @@ table {
   justify-content: space-evenly;
 }
 
+.arrange-buttons input{
+  background-color: #0003;
+  outline: none;
+  border: none;
+}
+
+.arrange-buttons input:hover{
+  background-color: #0008;
+}
+
 .arrange-inputs{
   display: flex;
   flex-direction: column;
+  margin-top: 10px;
 }
 
 .tsr{
@@ -92,4 +102,15 @@ table {
 
 .wdt{
   font-size: 1.4rem;
+}
+
+.imc-resultado {
+  text-align: center;
+}
+
+.imc-figure img {
+  display: inline-flex;
+  justify-content: center;
+  padding: 2px;
+  width: 40px;
 }
