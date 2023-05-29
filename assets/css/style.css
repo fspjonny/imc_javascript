@@ -38,12 +38,12 @@ h1 {
   padding: 5px;
 }
 
-form input, form label, form button {
+form input, select, form label, form button {
   display: block;
   margin-bottom: 8px;
 }
 
-form input {
+form input, select {
   font-size: 20px;
   padding: 4px;
   border-radius: 8px;
@@ -74,6 +74,14 @@ table {
   font-size: 14px;
 }
 
+.section-adulto {
+  display: block;
+}
+
+.section-infantil {
+  display: none;
+}
+
 .arrange-buttons{
   display: flex;
   flex-direction: row;
@@ -96,6 +104,12 @@ table {
   margin-top: 10px;
 }
 
+.arrange-inputs input, select{
+  outline: none;
+  border: none;
+  background-color: #0004;
+}
+
 .tsr{
   text-align: right;
 }
@@ -113,4 +127,30 @@ table {
   justify-content: center;
   padding: 2px;
   width: 40px;
+}
+
+.sub-categoria {
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+
+.choose-person {
+  font-weight: 700;
+  font-size: 1.2rem;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  gap: 18px;
+}
+
+.choose-children {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: 15px;
+  margin-bottom: 20px;
 }

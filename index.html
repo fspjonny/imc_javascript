@@ -15,35 +15,77 @@
 
   <section class="container">
     <h1>Calcule seu IMC</h1>
-    <h3><i class="fa-solid fa-clipboard-list wdt"></i> Tabela de IMC</h3>
+    <div class="choose-person">
+      <label>Adulto</label>
+      <input type="radio" name="adulto" class="option-adulto">
 
-    <table>
-    <thead>
-      <tr><td><strong>IMC</strong></td><td class="tsr"><strong>Resultado</strong></td></tr>
-      <tr><td>Menos do que 18,5</td><td class="tsr">Abaixo do peso.</td></tr>
-      <tr><td>Entre 18,5 e 24,9</td><td class="tsr">Peso normal.</td></tr>
-      <tr><td>Entre 25,0 e 29,9</td><td class="tsr">Sobrepeso.</td></tr>
-      <tr><td>Entre 30,0 e 34,9</td><td class="tsr">Obesidade grau 1.</td></tr>
-      <tr><td>Entre 35,0 e 39,9</td><td class="tsr">Obesidade grau 2.</td></tr>
-      <tr><td>Igual ou maior que 40,0</td><td class="tsr">Obesidade grau 3.</td></tr>
-    </thead>
-    </table>
-
-    <div class="resultado"></div>
-
-    <form class="formulario" action="" method="get">
-
-    <div class="arrange-inputs">
-      <label for="input1">Peso <i class="fa-solid fa-weight-hanging wdt"></i></label><input class="peso" type="number" min="0" value="0" id="input1" required>
-      <label for="input2">Altura <i class="fa-solid fa-person-circle-question wdt"></i></label><input class="altura" type="number" min="0" value="0" step="0.010" id="input2" required>
-    </div>  
-
-    <div class="arrange-buttons">
-      <input class="input-button" type="submit" value="Calcular">
-      <input class="input-button" type="reset" value="Limpar">
+      <label>Infantil</label>
+      <input type="radio" name="infantil" class="option-infantil">
     </div>
-    
-    </form>
+
+    <section class="section-adulto">
+      <h3><i class="fa-solid fa-clipboard-list wdt"></i> Tabela de IMC <span class="sub-categoria">(Adulto)</span></h3>
+      <table>
+      <thead>
+        <tr><td><strong>IMC</strong></td><td class="tsr"><strong>Resultado</strong></td></tr>
+        <tr><td>Menos do que 18,5</td><td class="tsr">Abaixo do peso.</td></tr>
+        <tr><td>Entre 18,5 e 24,9</td><td class="tsr">Peso normal.</td></tr>
+        <tr><td>Entre 25,0 e 29,9</td><td class="tsr">Sobrepeso.</td></tr>
+        <tr><td>Entre 30,0 e 34,9</td><td class="tsr">Obesidade grau 1.</td></tr>
+        <tr><td>Entre 35,0 e 39,9</td><td class="tsr">Obesidade grau 2.</td></tr>
+        <tr><td>Igual ou maior que 40,0</td><td class="tsr">Obesidade grau 3.</td></tr>
+      </thead>
+      </table>
+
+      <div class="resultado"></div>
+
+      <form class="formulario" action="" method="get">
+
+      <div class="arrange-inputs">
+        <label for="input1">Peso <i class="fa-solid fa-weight-hanging wdt"></i></label><input class="peso" type="number" min="0" value="0" id="input1" required>
+        <label for="input2">Altura <i class="fa-solid fa-person-circle-question wdt"></i></label><input class="altura" type="number" min="0" value="0" step="0.010" id="input2" required>
+      </div>  
+
+      <div class="arrange-buttons">
+        <input class="input-button" type="submit" value="Calcular">
+        <input class="input-button" type="reset" value="Limpar">
+      </div>
+      </form>
+    </section>
+
+    <section class="section-infantil">
+      <h3><i class="fa-solid fa-clipboard-list wdt"></i> Tabela de IMC <span class="sub-categoria">(Infantil)</span></h3>
+
+      <div class="choose-children">
+        <label>Menino</label>
+        <input type="radio" class="option-menino">
+        
+        <label>Menina</label>
+        <input type="radio" class="option-menina">
+      </div>
+
+      <div class="resultado"></div>
+
+      <form class="formulario" action="" method="get">
+
+      <div class="arrange-inputs">
+        <label>Idade(de 6 até 15)  <i class="fa-solid fa-baby-carriage wdt"></i></label>
+        <select name="idades" class="idade">
+          <option value=""></option><option value="6">6 anos</option><option value="7">7 anos</option><option value="8">8 anos</option>
+          <option value="9">9 anos</option><option value="10">10 anos</option><option value="11">11 anos</option><option value="12">12 anos</option>
+          <option value="13">13 anos</option><option value="14">14 anos</option><option value="15">15 anos</option>
+        </select>
+        <label>Peso <i class="fa-solid fa-weight-hanging wdt"></i></label><input class="peso" type="number" min="0" value="0" required>
+        <label>Altura <i class="fa-solid fa-person-circle-question wdt"></i></label><input class="altura" type="number" min="0" value="0" step="0.010" required>
+      </div>  
+
+      <div class="arrange-buttons">
+        <input class="input-button" type="submit" value="Calcular">
+        <input class="input-button" type="reset" value="Limpar">
+      </div>
+      </form>
+    </section>
+
   </section>
 
   <script src="./assets/js/main.js"></script>
