@@ -30,7 +30,7 @@ h2 {
   box-shadow: 4px 4px 2px #0004;
 }
 
-.resultado-adulto {
+.resultado-adulto, .resultado-infantil {
   display: none;
   margin: 20px 0;
   background-color: green;
@@ -38,21 +38,21 @@ h2 {
   padding: 5px;
 }
 
-form input, form label, form button {
+form input, select, form label, form button {
   display: block;
   margin-bottom: 8px;
   outline: none;
   border: none;
 }
 
-form input {
+form input, select {
   font-size: 20px;
   padding: 4px;
   border-radius: 8px;
   background-color: #0003;
 }
 
-.input-button {
+.input-button, .infantil-input-button {
   border-radius: 8px;
   background: var(--primary-color);
   color: #fff;
@@ -66,15 +66,6 @@ form input {
 
 form button:hover {
   background: var(--primary-color-darker);
-}
-
-table {
-  margin-top: 15px;
-  padding: 5px;
-  width: 100%;
-  border-radius: 8px;
-  background-color: rgba(211, 211, 211, 0.6);
-  font-size: 14px;
 }
 
 .arrange-buttons{
@@ -99,10 +90,6 @@ table {
   margin-top: 10px;
 }
 
-.tsr{
-  text-align: right;
-}
-
 .wdt{
   font-size: 1.4rem;
 }
@@ -115,7 +102,23 @@ table {
   display: inline-flex;
   justify-content: center;
   padding: 2px;
-  width: 40px;
+  width: 140px;
+}
+
+.child img {
+  display: inline-flex;
+  justify-content: center;
+  padding: 2px;
+  width: 50px;
+}
+
+.adulto-section {
+  display: block;
+}
+
+.infantil-section {
+  display: none;
+  flex-direction: column;
 }
 
 /* Radio buttons Adulto/Infantil */
@@ -123,6 +126,10 @@ table {
   display: inline-flex;
   flex-direction: row;
   justify-content: center;
-  gap: 30px;
-  margin-bottom: 10px;
+  gap: 100px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  background-color: #0002;
+  border-radius: 8px;
+  padding: 10px;
 }
