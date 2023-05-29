@@ -1,4 +1,10 @@
 const meuform = document.querySelector('.formulario')
+const adulto = document.querySelector('.option-adulto')
+const infantil = document.querySelector('.option-infantil')
+const section_adulto = document.querySelector('.section-adulto')
+const section_infantil = document.querySelector('.section-infantil')
+
+document.querySelector('.option-adulto').checked = true
 
 function getDados() {
 
@@ -74,4 +80,21 @@ function avaliacao(massa) {
     }
 }
 
+adulto.addEventListener('click', switchAdulto )
+infantil.addEventListener('click', switchInfantil )
+
+function switchAdulto(){
+    adulto.checked=true
+    infantil.checked=false
+    section_adulto.style.display='block'
+    section_infantil.style.display='none'
+}
+function switchInfantil(){
+    infantil.checked=true
+    adulto.checked=false
+    section_infantil.style.display='block'
+    section_adulto.style.display='none'
+}
+
+switchOptions()
 getDados()
