@@ -357,6 +357,247 @@ function avaliacaoInfantil(sexo, idade, massa) {
             return `<img class="child" src="./assets/img/menino-obeso.png" alt="Obesidade"><br/>Está <strong>com obesidade</strong>`
             break;
 
+// faixa de 6 anos meninas        
+        case (sexo == "2" && idade == 6 && massa <= 14.29):
+            document.querySelector('.resultado-infantil').style.background = '#00BFFF'
+            document.querySelector('.resultado-infantil').style.color = '#000'
+            return `<img class="child" src="./assets/img/menina-abaixo.png" alt="Peso Abaixo"><br/>Está <strong>abaixo do peso.</strong>`
+            break;
+
+        case (sexo == "2" && idade == 6 && massa >= 14.30 && massa <= 16.09):
+            document.querySelector('.resultado-infantil').style.background = '#00FF7F'
+            document.querySelector('.resultado-infantil').style.color = '#000'
+            return `<img class="child" src="./assets/img/menina-normal.png" alt="Peso Normal"><br/>Está <strong>no peso normal</strong>`
+            break;
+
+        case (sexo == "2" && idade == 6 && massa >= 16.10 && massa <= 17.39):
+            document.querySelector('.resultado-infantil').style.background = '#DAA520'
+            document.querySelector('.resultado-infantil').style.color = '#000'
+            return `<img class="child" src="./assets/img/menina-sobrepeso.png" alt="Sobrepeso"><br/>Está <strong>com sobrepeso</strong>`
+            break;
+
+        case (sexo == "2" && idade == 6 && massa >= 17.40):
+            document.querySelector('.resultado-infantil').style.background = '#8B0000'
+            document.querySelector('.resultado-infantil').style.color = '#ffff00'
+            return `<img class="child" src="./assets/img/menina-obeso.png" alt="Obesidade"><br/>Está <strong>com obesidade</strong>`
+            break;
+// faixa de 7 anos meninas        
+        case (sexo == "2" && idade == 7 && massa <= 14.89):
+            document.querySelector('.resultado-infantil').style.background = '#00BFFF'
+            document.querySelector('.resultado-infantil').style.color = '#000'
+            return `<img class="child" src="./assets/img/menina-abaixo.png" alt="Peso Abaixo"><br/>Está <strong>abaixo do peso.</strong>`
+            break;
+
+        case (sexo == "2" && idade == 7 && massa >= 14.90 && massa <= 17.09):
+            document.querySelector('.resultado-infantil').style.background = '#00FF7F'
+            document.querySelector('.resultado-infantil').style.color = '#000'
+            return `<img class="child" src="./assets/img/menina-normal.png" alt="Peso Normal"><br/>Está <strong>no peso normal</strong>`
+            break;
+
+        case (sexo == "2" && idade == 7 && massa >= 17.10 && massa <= 18.89):
+            document.querySelector('.resultado-infantil').style.background = '#DAA520'
+            document.querySelector('.resultado-infantil').style.color = '#000'
+            return `<img class="child" src="./assets/img/menina-sobrepeso.png" alt="Sobrepeso"><br/>Está <strong>com sobrepeso</strong>`
+            break;
+
+        case (sexo == "2" && idade == 7 && massa >= 18.90):
+            document.querySelector('.resultado-infantil').style.background = '#8B0000'
+            document.querySelector('.resultado-infantil').style.color = '#ffff00'
+            return `<img class="child" src="./assets/img/menina-obeso.png" alt="Obesidade"><br/>Está <strong>com obesidade</strong>`
+            break;
+// faixa de 8 anos meninas        
+        case (sexo == "2" && idade == 8 && massa <= 15.59):
+            document.querySelector('.resultado-infantil').style.background = '#00BFFF'
+            document.querySelector('.resultado-infantil').style.color = '#000'
+            return `<img class="child" src="./assets/img/menina-abaixo.png" alt="Peso Abaixo"><br/>Está <strong>abaixo do peso.</strong>`
+            break;
+
+        case (sexo == "2" && idade == 8 && massa >= 15.60 && massa <= 18.09):
+            document.querySelector('.resultado-infantil').style.background = '#00FF7F'
+            document.querySelector('.resultado-infantil').style.color = '#000'
+            return `<img class="child" src="./assets/img/menina-normal.png" alt="Peso Normal"><br/>Está <strong>no peso normal</strong>`
+            break;
+
+        case (sexo == "2" && idade == 8 && massa >= 18.10 && massa <= 20.29):
+            document.querySelector('.resultado-infantil').style.background = '#DAA520'
+            document.querySelector('.resultado-infantil').style.color = '#000'
+            return `<img class="child" src="./assets/img/menina-sobrepeso.png" alt="Sobrepeso"><br/>Está <strong>com sobrepeso</strong>`
+            break;
+
+        case (sexo == "2" && idade == 8 && massa >= 20.30):
+            document.querySelector('.resultado-infantil').style.background = '#8B0000'
+            document.querySelector('.resultado-infantil').style.color = '#ffff00'
+            return `<img class="child" src="./assets/img/menina-obeso.png" alt="Obesidade"><br/>Está <strong>com obesidade</strong>`
+            break;
+// faixa de 9 anos meninas
+        case (sexo == "2" && idade == 9 && massa <= 16.29):
+            document.querySelector('.resultado-infantil').style.background = '#00BFFF'
+            document.querySelector('.resultado-infantil').style.color = '#000'
+            return `<img class="child" src="./assets/img/menina-abaixo.png" alt="Peso Abaixo"><br/>Está <strong>abaixo do peso.</strong>`
+            break;
+
+        case (sexo == "2" && idade == 9 && massa >= 16.30 && massa <= 19.09):
+            document.querySelector('.resultado-infantil').style.background = '#00FF7F'
+            document.querySelector('.resultado-infantil').style.color = '#000'
+            return `<img class="child" src="./assets/img/menina-normal.png" alt="Peso Normal"><br/>Está <strong>no peso normal</strong>`
+            break;
+
+        case (sexo == "2" && idade == 9 && massa >= 19.10 && massa <= 21.69):
+            document.querySelector('.resultado-infantil').style.background = '#DAA520'
+            document.querySelector('.resultado-infantil').style.color = '#000'
+            return `<img class="child" src="./assets/img/menina-sobrepeso.png" alt="Sobrepeso"><br/>Está <strong>com sobrepeso</strong>`
+            break;
+
+        case (sexo == "2" && idade == 9 && massa >= 21.70):
+            document.querySelector('.resultado-infantil').style.background = '#8B0000'
+            document.querySelector('.resultado-infantil').style.color = '#ffff00'
+            return `<img class="child" src="./assets/img/menina-obeso.png" alt="Obesidade"><br/>Está <strong>com obesidade</strong>`
+            break;
+// faixa de 10 anos meninas
+        case (sexo == "2" && idade == 10 && massa <= 16.99):
+            document.querySelector('.resultado-infantil').style.background = '#00BFFF'
+            document.querySelector('.resultado-infantil').style.color = '#000'
+            return `<img class="child" src="./assets/img/menina-abaixo.png" alt="Peso Abaixo"><br/>Está <strong>abaixo do peso.</strong>`
+            break;
+
+        case (sexo == "2" && idade == 10 && massa >= 17.00 && massa <= 20.09):
+            document.querySelector('.resultado-infantil').style.background = '#00FF7F'
+            document.querySelector('.resultado-infantil').style.color = '#000'
+            return `<img class="child" src="./assets/img/menina-normal.png" alt="Peso Normal"><br/>Está <strong>no peso normal</strong>`
+            break;
+
+        case (sexo == "2" && idade == 10 && massa >= 20.10 && massa <= 23.19):
+            document.querySelector('.resultado-infantil').style.background = '#DAA520'
+            document.querySelector('.resultado-infantil').style.color = '#000'
+            return `<img class="child" src="./assets/img/menina-sobrepeso.png" alt="Sobrepeso"><br/>Está <strong>com sobrepeso</strong>`
+            break;
+
+        case (sexo == "2" && idade == 10 && massa >= 23.20):
+            document.querySelector('.resultado-infantil').style.background = '#8B0000'
+            document.querySelector('.resultado-infantil').style.color = '#ffff00'
+            return `<img class="child" src="./assets/img/menina-obeso.png" alt="Obesidade"><br/>Está <strong>com obesidade</strong>`
+            break;
+// faixa de 11 anos meninas
+        case (sexo == "2" && idade == 11 && massa <= 17.69):
+            document.querySelector('.resultado-infantil').style.background = '#00BFFF'
+            document.querySelector('.resultado-infantil').style.color = '#000'
+            return `<img class="child" src="./assets/img/menina-abaixo.png" alt="Peso Abaixo"><br/>Está <strong>abaixo do peso.</strong>`
+            break;
+
+        case (sexo == "2" && idade == 11 && massa >= 17.60 && massa <= 21.09):
+            document.querySelector('.resultado-infantil').style.background = '#00FF7F'
+            document.querySelector('.resultado-infantil').style.color = '#000'
+            return `<img class="child" src="./assets/img/menina-normal.png" alt="Peso Normal"><br/>Está <strong>no peso normal</strong>`
+            break;
+
+        case (sexo == "2" && idade == 11 && massa >= 21.10 && massa <= 24.49):
+            document.querySelector('.resultado-infantil').style.background = '#DAA520'
+            document.querySelector('.resultado-infantil').style.color = '#000'
+            return `<img class="child" src="./assets/img/menina-sobrepeso.png" alt="Sobrepeso"><br/>Está <strong>com sobrepeso</strong>`
+            break;
+
+        case (sexo == "2" && idade == 11 && massa >= 24.50):
+            document.querySelector('.resultado-infantil').style.background = '#8B0000'
+            document.querySelector('.resultado-infantil').style.color = '#ffff00'
+            return `<img class="child" src="./assets/img/menina-obeso.png" alt="Obesidade"><br/>Está <strong>com obesidade</strong>`
+            break;
+// faixa de 12 anos meninas
+        case (sexo == "2" && idade == 12 && massa <= 18.29):
+            document.querySelector('.resultado-infantil').style.background = '#00BFFF'
+            document.querySelector('.resultado-infantil').style.color = '#000'
+            return `<img class="child" src="./assets/img/menina-abaixo.png" alt="Peso Abaixo"><br/>Está <strong>abaixo do peso.</strong>`
+            break;
+
+        case (sexo == "2" && idade == 12 && massa >= 18.30 && massa <= 22.09):
+            document.querySelector('.resultado-infantil').style.background = '#00FF7F'
+            document.querySelector('.resultado-infantil').style.color = '#000'
+            return `<img class="child" src="./assets/img/menina-normal.png" alt="Peso Normal"><br/>Está <strong>no peso normal</strong>`
+            break;
+
+        case (sexo == "2" && idade == 12 && massa >= 22.10 && massa <= 25.89):
+            document.querySelector('.resultado-infantil').style.background = '#DAA520'
+            document.querySelector('.resultado-infantil').style.color = '#000'
+            return `<img class="child" src="./assets/img/menina-sobrepeso.png" alt="Sobrepeso"><br/>Está <strong>com sobrepeso</strong>`
+            break;
+
+        case (sexo == "2" && idade == 12 && massa >= 25.90):
+            document.querySelector('.resultado-infantil').style.background = '#8B0000'
+            document.querySelector('.resultado-infantil').style.color = '#ffff00'
+            return `<img class="child" src="./assets/img/menina-obeso.png" alt="Obesidade"><br/>Está <strong>com obesidade</strong>`
+            break;
+// faixa de 13 anos meninas
+        case (sexo == "2" && idade == 13 && massa <= 18.89):
+            document.querySelector('.resultado-infantil').style.background = '#00BFFF'
+            document.querySelector('.resultado-infantil').style.color = '#000'
+            return `<img class="child" src="./assets/img/menina-abaixo.png" alt="Peso Abaixo"><br/>Está <strong>abaixo do peso.</strong>`
+            break;
+
+        case (sexo == "2" && idade == 13 && massa >= 18.90 && massa <= 22.99):
+            document.querySelector('.resultado-infantil').style.background = '#00FF7F'
+            document.querySelector('.resultado-infantil').style.color = '#000'
+            return `<img class="child" src="./assets/img/menina-normal.png" alt="Peso Normal"><br/>Está <strong>no peso normal</strong>`
+            break;
+
+        case (sexo == "2" && idade == 13 && massa >= 23.00 && massa <= 27.69):
+            document.querySelector('.resultado-infantil').style.background = '#DAA520'
+            document.querySelector('.resultado-infantil').style.color = '#000'
+            return `<img class="child" src="./assets/img/menina-sobrepeso.png" alt="Sobrepeso"><br/>Está <strong>com sobrepeso</strong>`
+            break;
+
+        case (sexo == "2" && idade == 13 && massa >= 27.70):
+            document.querySelector('.resultado-infantil').style.background = '#8B0000'
+            document.querySelector('.resultado-infantil').style.color = '#ffff00'
+            return `<img class="child" src="./assets/img/menina-obeso.png" alt="Obesidade"><br/>Está <strong>com obesidade</strong>`
+            break;
+// faixa de 14 anos meninas
+        case (sexo == "2" && idade == 14 && massa <= 19.29):
+            document.querySelector('.resultado-infantil').style.background = '#00BFFF'
+            document.querySelector('.resultado-infantil').style.color = '#000'
+            return `<img class="child" src="./assets/img/menina-abaixo.png" alt="Peso Abaixo"><br/>Está <strong>abaixo do peso.</strong>`
+            break;
+
+        case (sexo == "2" && idade == 14 && massa >= 19.30 && massa <= 23.79):
+            document.querySelector('.resultado-infantil').style.background = '#00FF7F'
+            document.querySelector('.resultado-infantil').style.color = '#000'
+            return `<img class="child" src="./assets/img/menina-normal.png" alt="Peso Normal"><br/>Está <strong>no peso normal</strong>`
+            break;
+
+        case (sexo == "2" && idade == 14 && massa >= 23.80 && massa <= 27.89):
+            document.querySelector('.resultado-infantil').style.background = '#DAA520'
+            document.querySelector('.resultado-infantil').style.color = '#000'
+            return `<img class="child" src="./assets/img/menina-sobrepeso.png" alt="Sobrepeso"><br/>Está <strong>com sobrepeso</strong>`
+            break;
+
+        case (sexo == "2" && idade == 14 && massa >= 27.90):
+            document.querySelector('.resultado-infantil').style.background = '#8B0000'
+            document.querySelector('.resultado-infantil').style.color = '#ffff00'
+            return `<img class="child" src="./assets/img/menina-obeso.png" alt="Obesidade"><br/>Está <strong>com obesidade</strong>`
+            break;
+// faixa de 15 anos meninas
+        case (sexo == "2" && idade == 15 && massa <= 19.59):
+            document.querySelector('.resultado-infantil').style.background = '#00BFFF'
+            document.querySelector('.resultado-infantil').style.color = '#000'
+            return `<img class="child" src="./assets/img/menina-abaixo.png" alt="Peso Abaixo"><br/>Está <strong>abaixo do peso.</strong>`
+            break;
+
+        case (sexo == "2" && idade == 15 && massa >= 19.60 && massa <= 24.19):
+            document.querySelector('.resultado-infantil').style.background = '#00FF7F'
+            document.querySelector('.resultado-infantil').style.color = '#000'
+            return `<img class="child" src="./assets/img/menina-normal.png" alt="Peso Normal"><br/>Está <strong>no peso normal</strong>`
+            break;
+
+        case (sexo == "2" && idade == 15 && massa >= 24.20 && massa <= 28.79):
+            document.querySelector('.resultado-infantil').style.background = '#DAA520'
+            document.querySelector('.resultado-infantil').style.color = '#000'
+            return `<img class="child" src="./assets/img/menina-sobrepeso.png" alt="Sobrepeso"><br/>Está <strong>com sobrepeso</strong>`
+            break;
+
+        case (sexo == "2" && idade == 15 && massa >= 28.80):
+            document.querySelector('.resultado-infantil').style.background = '#8B0000'
+            document.querySelector('.resultado-infantil').style.color = '#ffff00'
+            return `<img class="child" src="./assets/img/menina-obeso.png" alt="Obesidade"><br/>Está <strong>com obesidade</strong>`
+            break;
+
     
         default:
             document.querySelector('.resultado-infantil').style.background = '#00BFFF'
